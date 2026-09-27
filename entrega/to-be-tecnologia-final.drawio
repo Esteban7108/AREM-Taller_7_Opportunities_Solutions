@@ -1,0 +1,140 @@
+<mxGraphModel dx="2416" dy="1232" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+    <mxCell id="zona_clientes" parent="1" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;verticalAlign=top;fontStyle=1;fontSize=14;fillColor=none;strokeColor=#666666;" value="Clientes" vertex="1">
+      <mxGeometry height="360" width="220" x="60" y="100" as="geometry" />
+    </mxCell>
+    <mxCell id="usuario" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&amp;nbsp;App Móvil&lt;br&gt;Usuario Final" vertex="1">
+      <mxGeometry height="70" width="160" x="90" y="140" as="geometry" />
+    </mxCell>
+    <mxCell id="mensajero" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&amp;nbsp;App Móvil&lt;br&gt;Mensajero" vertex="1">
+      <mxGeometry height="70" width="160" x="80" y="300" as="geometry" />
+    </mxCell>
+    <mxCell id="operador" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&amp;nbsp;Portal Web&lt;br&gt;Operador" vertex="1">
+      <mxGeometry height="70" width="160" x="80" y="220" as="geometry" />
+    </mxCell>
+    <mxCell id="zona_borde" parent="1" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;verticalAlign=top;fontStyle=1;fontSize=14;fillColor=none;strokeColor=#666666;" value="Borde / Global (TO-BE)" vertex="1">
+      <mxGeometry height="620" width="280" x="350" y="100" as="geometry" />
+    </mxCell>
+    <mxCell id="lb1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" value="&amp;nbsp;Balanceador de Carga&lt;br&gt;Activo" vertex="1">
+      <mxGeometry height="70" width="220" x="390" y="150" as="geometry" />
+    </mxCell>
+    <mxCell id="lb2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2e8b57;fontColor=#ffffff;strokeColor=#1c5c38;fontStyle=1;" value="&amp;nbsp;NUEVO: Balanceador de Carga&lt;br&gt;Pasivo (failover automático)" vertex="1">
+      <mxGeometry height="70" width="220" x="390" y="250" as="geometry" />
+    </mxCell>
+    <mxCell id="monitor" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" value="Servicio de Monitoreo&#xa;y Alertas" vertex="1">
+      <mxGeometry height="70" width="220" x="390" y="450" as="geometry" />
+    </mxCell>
+    <mxCell id="dbbog" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;boundedLbl=1;" value="&amp;nbsp;BD Bogotá&lt;br&gt;(partición regional)" vertex="1">
+      <mxGeometry height="100" width="180" x="390" y="570" as="geometry" />
+    </mxCell>
+    <mxCell id="dbmed" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#2e8b57;fontColor=#ffffff;strokeColor=#1c5c38;fontStyle=1;boundedLbl=1;" value="&amp;nbsp;NUEVO: BD Medellín&lt;br&gt;(partición regional)" vertex="1">
+      <mxGeometry height="100" width="180" x="360" y="690" as="geometry" />
+    </mxCell>
+    <mxCell id="zona_bogota" parent="1" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;verticalAlign=top;fontStyle=1;fontSize=14;fillColor=none;strokeColor=#666666;" value="Región Bogotá" vertex="1">
+      <mxGeometry height="360" width="280" x="700" y="100" as="geometry" />
+    </mxCell>
+    <mxCell id="gwbog" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="API Gateway&#xa;Bogotá" vertex="1">
+      <mxGeometry height="70" width="220" x="730" y="150" as="geometry" />
+    </mxCell>
+    <mxCell id="rutasbog" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Módulo de Procesamiento&#xa;de Rutas y Paquetes - Bogotá" vertex="1">
+      <mxGeometry height="80" width="220" x="730" y="260" as="geometry" />
+    </mxCell>
+    <mxCell id="zona_medellin" parent="1" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;verticalAlign=top;fontStyle=1;fontSize=14;fillColor=none;strokeColor=#666666;" value="Región Medellín (TO-BE)" vertex="1">
+      <mxGeometry height="360" width="300" x="1040" y="100" as="geometry" />
+    </mxCell>
+    <mxCell id="gwmed" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="&amp;nbsp;API Gateway - Medellín" vertex="1">
+      <mxGeometry height="80" width="240" x="1070" y="150" as="geometry" />
+    </mxCell>
+    <mxCell id="rutasmed" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2e8b57;fontColor=#ffffff;strokeColor=#1c5c38;fontStyle=1;" value="&amp;nbsp;NUEVO: Módulo de Rutas y&lt;br&gt;Paquetes - Medellín (réplica)" vertex="1">
+      <mxGeometry height="80" width="240" x="1070" y="260" as="geometry" />
+    </mxCell>
+    <mxCell id="e1" edge="1" parent="1" source="usuario" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="lb1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="320.03" y="160.03" />
+          <mxPoint x="320.03" y="185" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="e2" edge="1" parent="1" source="mensajero" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="lb1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="240.03" y="340.03" />
+          <mxPoint x="320.03" y="340.03" />
+          <mxPoint x="320.03" y="185" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="e3" edge="1" parent="1" source="operador" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="lb1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="320.03" y="255" />
+          <mxPoint x="320.03" y="185" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="e_failover" edge="1" parent="1" source="lb1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;endArrow=block;strokeColor=#1c5c38;fontColor=#1c5c38;fontStyle=1;" target="lb2" value="NUEVO: conmutación&#xa;por falla">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="e4" edge="1" parent="1" source="lb1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="gwbog">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="e5" edge="1" parent="1" source="lb1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="gwmed">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="560.03" y="20.03" />
+          <mxPoint x="1080.03" y="20.03" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="e6" edge="1" parent="1" source="gwbog" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="rutasbog">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="e7" edge="1" parent="1" source="gwmed" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#1c5c38;fontColor=#1c5c38;fontStyle=1;" target="rutasmed" value="NUEVO: procesa&#xa;localmente">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="e8" edge="1" parent="1" source="rutasbog" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="dbbog">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="840.03" y="620.03" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="e8b" edge="1" parent="1" source="rutasmed" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#1c5c38;fontColor=#1c5c38;fontStyle=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="dbmed" value="NUEVO: escritura&#xa;regional">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="1200" y="340" />
+          <mxPoint x="1200" y="744" />
+          <mxPoint x="620" y="744" />
+          <mxPoint x="620" y="740" />
+        </Array>
+        <mxPoint x="1310" y="414" as="sourcePoint" />
+        <mxPoint x="620" y="764" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="e9" edge="1" parent="1" source="gwbog" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;exitX=0.466;exitY=0.974;exitDx=0;exitDy=0;exitPerimeter=0;" target="monitor">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="832.47" y="240" />
+          <mxPoint x="670" y="240" />
+          <mxPoint x="670" y="370" />
+          <mxPoint x="500" y="370" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="e10" edge="1" parent="1" source="gwmed" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="monitor">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="1430" y="190" />
+          <mxPoint x="1430" y="480" />
+          <mxPoint x="610" y="480" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="leyenda" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#1c5c38;dashed=1;fontSize=12;fontColor=#1c5c38;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;" value="Verde = elemento NUEVO en el TO-BE&#xa;(Balanceador pasivo, BD Medellín,&#xa;Módulo de Rutas - Medellín)" vertex="1">
+      <mxGeometry height="80" width="300" x="880" y="520" as="geometry" />
+    </mxCell>
+  </root>
+</mxGraphModel>
